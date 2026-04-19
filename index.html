@@ -4,6 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+<title>Live Market Learning</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -45,6 +46,12 @@ h1{
   font-weight:600;
 }
 
+.fomo{
+  font-size:13px;
+  color:#facc15;
+  margin-bottom:12px;
+}
+
 .card{
   background:rgba(255,255,255,0.05);
   padding:16px;
@@ -66,7 +73,7 @@ h1{
   font-weight:800;
   text-decoration:none;
   color:#fff;
-  margin-top:10px;
+  margin-top:12px;
   box-shadow:0 0 20px rgba(34,197,94,0.5);
   transition:0.3s;
 }
@@ -81,14 +88,8 @@ h1{
   color:#facc15;
 }
 
-.disclaimer{
-  font-size:12px;
-  color:#94a3b8;
-  margin-top:18px;
-  line-height:1.5;
-}
 
-/* FOOTER */
+
 .footer-links{
   margin-top:22px;
   font-size:13px;
@@ -113,7 +114,7 @@ h1{
   line-height:1.5;
 }
 </style>
-  
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -124,13 +125,21 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '955910607404353');
 fbq('track', 'PageView');
+
+/* TRACK BUTTON CLICK */
+function trackJoin(){
+  fbq('track','Lead');
+}
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=955910607404353&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=955910607404353&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel -->
 
 </head>
 
@@ -142,35 +151,42 @@ src="https://www.facebook.com/tr?id=955910607404353&ev=PageView&noscript=1"
     <img src="https://ttm.adzinox.in/wp-content/uploads/2026/03/photo_2026-03-25-00.12.17.jpeg" alt="logo">
   </div>
 
-  <h1>📊 Learn Trading with <span class="highlight">Live Market Sessions</span></h1>
+  <h1>📊 Live Market Learning <span class="highlight">Happening Now</span></h1>
 
   <div class="sub">
-    Join a community focused on real-time market learning & analysis
+    Join others who are already watching and understanding real-time market movements
+  </div>
+
+  <!-- FOMO LINE -->
+  <div class="fomo">
+    🔴 Ongoing live sessions • New members joining daily
+  </div>
+
+  <!-- EXTRA FOMO -->
+  <div style="font-size:12px;color:#22c55e;">
+    ✔ Limited active spots for live interaction
   </div>
 
   <div class="card">
-    <div class="point">✔ Live market analysis sessions</div>
-    <div class="point">✔ Real-time trade explanations</div>
-    <div class="point">✔ Beginner-friendly guidance</div>
-    <div class="point">✔ Learn how markets actually work</div>
+    <div class="point">✔ See how markets move in real-time</div>
+    <div class="point">✔ Learn step-by-step price action explanation</div>
+    <div class="point">✔ Beginner-friendly environment</div>
+    <div class="point">✔ No signals • No tips • Only learning</div>
   </div>
 
-  <a class="btn" href="https://t.me/+oqtgrZKYk74yMjY1" target="_blank">
-    👉 Join Free Learning Community
+  <a class="btn" href="https://t.me/+oqtgrZKYk74yMjY1" target="_blank" onclick="trackJoin()">
+    🚀 Join Free Before Next Session Starts
   </a>
 
   <div class="live">
-    🔴 Live sessions happen regularly inside the community
+    ⏳ Next live session can start anytime
   </div>
 
   <p style="font-size:12px;color:#94a3b8;margin-top:10px;">
-    ⚠️ Educational purpose only • No financial advice
+    ⚠️ Educational content only • Not financial advice
   </p>
 
-  <div class="disclaimer">
-    Trading involves risk and may not be suitable for everyone.<br>
-    We do not guarantee any results.
-  </div>
+ 
 
   <!-- FOOTER -->
   <div class="footer-links">
